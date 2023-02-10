@@ -4,7 +4,7 @@ title:  "Find the index at O(log n) time complexity"
 date:   2023-02-10 01:37:00 -0600
 categories: algorithms binary-search
 ---
-There is an array A\[1,2...n\], it is guaranteed that there exists a position k, 1 <= k < n, where the items indexd from 1 to k <= 32768, and items indexed from k to n > 32768, you need to come up with an O(log n) time complexity algorithm.
+There is an array A\[1,2...n\], n >= 2. It is guaranteed that there exists a position k, 1 <= k < n, where the items indexd from 1 to k <= 32768, and items indexed from k to n > 32768, you need to come up with an O(log n) time complexity algorithm.
 
 We shall try to tackle this problem with `real-world` programming languages, thus our array starts at the `index of 0`.
 
