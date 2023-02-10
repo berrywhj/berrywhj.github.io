@@ -1,2 +1,2 @@
 # berrywhj.github.io
-personal blog
+This is a repository serves as Huanjia Wang's personal blog.
