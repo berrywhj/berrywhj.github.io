@@ -10,7 +10,7 @@ My industry experience is mainly focused on `frontend development`. I also accom
 
 I served some well-known companies like [Microsoft](https://www.microsoft.com/), [PDD(Pinduoduo Inc - ADR)](https://www.temu.com/), [SAP](https://www.sap.com/), and so on.
 
-Now I am studying at `DePaul University` majoring in `Computer Software Engineering`. I shall graduate around 06/2024 or 12/2024(might depend on the economy situation in the US).
+Now I am studying at `DePaul University` majoring in `Computer Software Engineering`. I shall graduate around 12/2024.
 
 I am totally open to `summer internships` concerning software development. Referral or invitations in such a `cold winter`(talking economically) is more than welcome.
 
