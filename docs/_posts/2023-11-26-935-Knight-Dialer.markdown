@@ -11,7 +11,7 @@ My intuitive way of solving this problem is to use `backtrack` to calculate all 
 
 We can try to start with n = 1. In this situation, all numbers can form a unique phone number at the length of 1. So our return value is 10.
 
-If n = 2, we can divide all possible combinations into different categories. If n >= 2, There are actually 9 different categories (There can be no phone number start with 5 if the length of the phone number is expected to be larger than 1, since that there are no  possible movements after we move to 5)
+If n = 2, we can divide all possible combinations into different categories. If n >= 2, There are actually 9 different categories (There can be no phone numbers end with 5 if the length of the phone number is expected to be larger than 1, since that there are no  possible movements after we move to 5)
 
     0. the phone numbers end with 0
     1. the phone numbers end with 1
@@ -32,7 +32,7 @@ If n = 2, we can divide all possible combinations into different categories. If 
 |8|	1, 3|
 |9|	2, 4|
 
-Suppose the number of uique phone number combinations of length `m` (1 < m < n) end with `0` equals to `x0`, number of those end with `1` equals to `x1` and so on. Accroding to the table, we can know the the number of uique phone number combinations of length `m + 1` end with `0` equals to `x4 + x6` (as we know that only when the `previous digit` is `4 or 6`, then the `next digit` could be `0`). From the same logic, the number of uique phone number combinations of length `m + 1` end with `1` equals to `x6 + x9`.
+Suppose the number of uique phone number combinations of length `m` (1 < m < n) end with `0` equals to `x0`, number of those end with `1` equals to `x1` and so on. Accroding to the table, we can know that the number of uique phone number combinations of length `m + 1` end with `0` equals to `x4 + x6` (as we know that only when the `previous digit` is `4 or 6`, then the `next digit` could be `0`). Following the same logic, the number of uique phone number combinations of length `m + 1` end with `1` equals to `x6 + x9`.
 
 Now we found the pattern, we can define the transfer equation
 
