@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Whether is a sorting algorithm stable"
+title:  "935 Knight Dialer"
 date:   2023-11-26 11:52:03 -0600
 categories: algorithms
 ---
 
-Link to the problem: https://leetcode.com/problems/knight-dialer/
+Link to the problem: [LeetCode 935 Knight Dialer](https://leetcode.com/problems/knight-dialer/) 
 
 My intuitive way of solving this problem is to use `backtrack` to calculate all possible phone number combinations. And with the help of the `set`, we can `avoid repetitiveness`. However, both the `scale` of n which is larger than 1 and smaller than 5000 and the description that the return value might be very large so we need to return the answer `modulo` 10^9 + 7 are suggesting that the usage of backtrack is going to cause `time limit exceed`.
 
@@ -13,11 +13,11 @@ We can try to start with n = 1. In this situation, all numbers can form a unique
 
 If n = 2, we can divide all possible combinations into different categories. If n >= 2, There are actually 9 different categories (There can be no phone number start with 5 if the length of the phone number is expected to be larger than 1, since that there are no  possible movements after we move to 5)
 
-    0. the phone numbers end with 0 </br>
-    1. the phone numbers end with 1 </br>
+    0. the phone numbers end with 0
+    1. the phone numbers end with 1
     ... ... ... ...
-    8. the phone numbers end with 8 </br>
-    9. the phone numbers end with 9 </br>
+    8. the phone numbers end with 8
+    9. the phone numbers end with 9
 
 | From      | Can Jump To |
 | ----------- | ----------- |
