@@ -7,9 +7,9 @@ categories: algorithms greedy
 
 Link to the problem: [LeetCode2147 Number of Ways to Divide a Long Corridor](https://leetcode.com/problems/number-of-ways-to-divide-a-long-corridor/) 
 
-A very basic observation is that if there are no seats or odd number of seat in our Corridor, there could be no way to divide it, which means if the number of `'S'` in the input string `corridor` is 0 or odd, the return answer should be 0.
+A very basic observation is that if there are no seats or odd number of seats in our Corridor, there could be no way to divide it, which means if the number of `'S'` in the input string `corridor` is 0 or odd, the return answer should be 0.
 
-If we tag the first seat we encounter as the first seat, which is an odd number, and the second seat tagged as even, we can found that the divider can be only placed between the even seat and the following odd seat. Further, the number of plants between these two consecutive seats, happen to be the number of possibilities that the divier can be put between these two seats.
+If we define the first seat we encounter as the `first seat`, which is an `odd` number, and the `second seat` tagged as `even`, we can found that the divider can be only placed between the even seat and the following odd seat. Further, the indices difference between these two seats, happen to be the number of possibilities that the divier can be put between these two seats.
 
 Say we got `S(1), S(2), S(3) ... S(2n - 1), S(2n)` at total `2n` number of `'S'` in the input string  `corridor`. Since there have to be a divider after every 2 consecutive seats(expect the last two seats), we need to place `n - 1` divider in the long corridor. And from the conclusion above, the number of possible positions of placing a divider between `S(2)` and `S(3)` equal to the index of `S(3)` substract the index of `S(2)`, the number of possible positions of placing a divider between `S(4)` and `S(5)` equal to the index of `S(5)` substract the index of `S(4)` and so on. There are `n - 1` dividers to be placed, and the final number of posibilities equals to the product of the number of possibilities of each divider.
 
