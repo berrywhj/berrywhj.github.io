@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "2147 Number of Ways to Divide a Long Corridor"
-date:   2023-11-26 11:52:03 -0600
+date:   2023-11-27 11:47:03 -0600
 categories: algorithms greedy
 ---
 
