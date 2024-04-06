@@ -7,13 +7,13 @@ categories: algorithms binary-tree Meta
 
 [The link to the question is here](https://leetcode.com/problems/binary-tree-vertical-order-traversal/description/).
 
-We can use tree `level order travesal` to solve this problem. First, we define that the column number of the left child should be the column number of its parent minus 1. Similarly, the column number of right child should be the column number of its parent plus one. We can mark the `root` as `column 0`. Then instead of use `one queue` to store the TreeNodes in the normal fashion, we need `another queue` to store the `column number` mapping to the TreeNode.
+We can use tree `level order travesal` to solve this problem. First, we define that the column number of the left child should be the column number of its parent minus 1. Similarly, the column number of right child should be the column number of its parent plus one. We can mark the `root` as `column 0`. In tree level order travesal, we only use `one queue` to store the TreeNodes. But in this problem, we need `another queue` to store the `column number` mapping to the TreeNode.
 
 We also need a Map, the key stores the `column number`, and the value store the `list` of the TreeNodes fall into the column of its key.
 
 Since we are iterating `from top to bottom`, we should be able to guarantee that in each list of the column, the TreeNode from `upper level` appears `earlier` than `lowwer level`.
 
-Since in each `level`, we traverse from `left to right`, we can guarantee that TreeNodes in the `same level` with `same column` has proper order.
+Since in each `level`, we traverse from `left to right`, we can guarantee that TreeNodes in the `same level` with `same column number` has proper order.
 
 {% highlight java %}
 class TreeNode {
