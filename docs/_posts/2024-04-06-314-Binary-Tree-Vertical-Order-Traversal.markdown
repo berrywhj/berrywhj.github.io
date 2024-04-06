@@ -1,19 +1,19 @@
 ---
 layout: post
 title:  "314. Binary Tree Vertical Order Traversal"
-date:   2024-04-02 23:01:00 -0600
+date:   2024-04-06 17:24:42 -0500
 categories: algorithms binary-tree Meta
 ---
 
 [The link to the question is here](https://leetcode.com/problems/binary-tree-vertical-order-traversal/description/).
 
-We can use tree level order travesal to solve this problem. First define that the column number of the left child should be the column number of its parent minus 1. Similarly, the column number of right child should be the column number of its parent plus one. We can mark the root as column 0. Then instead of use one queue to store the TreeNodes in the normal fashion, we need another queue to store the column number mapping to the TreeNode.
+We can use tree `level order travesal` to solve this problem. First, we define that the column number of the left child should be the column number of its parent minus 1. Similarly, the column number of right child should be the column number of its parent plus one. We can mark the `root` as `column 0`. Then instead of use `one queue` to store the TreeNodes in the normal fashion, we need `another queue` to store the `column number` mapping to the TreeNode.
 
-We also need a Map, the key stores the column number, and the value store the list of the TreeNodes fall into that column.
+We also need a Map, the key stores the `column number`, and the value store the `list` of the TreeNodes fall into the column of its key.
 
-Since we are iterating from top to bottom, we should be able to guarantee that in each list of the column, the TreeNode from upper level appears earlier than lowwer level.
+Since we are iterating `from top to bottom`, we should be able to guarantee that in each list of the column, the TreeNode from `upper level` appears `earlier` than `lowwer level`.
 
-Since in each level, we traverse from left to right, we can guarantee that TreeNodes in the same level with same column has proper order.
+Since in each `level`, we traverse from `left to right`, we can guarantee that TreeNodes in the `same level` with `same column` has proper order.
 
 {% highlight java %}
 class TreeNode {
@@ -100,10 +100,10 @@ class Solution {
 }
 {% endhighlight %}
 
-Time complexity: O(n)
+Time complexity: `O(n)`
 
-We traverse the Tree only once and when dealing with each node, we manipulate these collections within constant time, so the time complexity should be O(n), n is the number of TreeNodes in that tree.
+We traverse the Tree only `once` and when dealing with each node, we manipulate these collections within constant time, so the time complexity should be O(n), n is the number of TreeNodes in that tree.
 
-Space complexity: O(n)
+Space complexity: `O(n)`
 
-The return list contains serveral lists, while the total number of the TreeNode in these lists should be n. The map is kind of similar. We also utilize two queue to perform our level order traversal, the space complexity of these two queues is also O(n). So, the overall space complexity should be O(n).
+The return list contains serveral lists, while the `total number of the TreeNodes` in these lists should be n. The map is kind of similar. We also utilize two queues to perform our level order traversal, the space complexity of these two queues is also O(n). So, the overall space complexity should be O(n).
