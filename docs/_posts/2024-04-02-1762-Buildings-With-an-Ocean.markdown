@@ -9,6 +9,7 @@ categories: algorithms array Meta
 
 
 The key observation is, A building can have the Ocean View only when it is `higher` than any other buildings on its right side. That is
+
 $$ \text{ if } n_i \text{ represents the height of the ith building, } $$
 $$ \forall j > i, \,\text{ we have } n_i > n_j $$
 
