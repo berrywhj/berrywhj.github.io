@@ -4,6 +4,7 @@ title:  "1762.Buildings With an Ocean View"
 date:   2024-04-02 23:01:00 -0600
 categories: algorithms array Meta
 ---
+
 [The link to the question is here](https://leetcode.com/problems/buildings-with-an-ocean-view/description/).
 
 

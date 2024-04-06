@@ -1,7 +1,6 @@
 ---
 layout: post
-title:  "2982. Find Longest Special Substring That Occurs Thrice II
-"
+title:  "2982. Find Longest Special Substring That Occurs Thrice II"
 date:   2024-01-01 17:10:55 -0600
 categories: algorithms greedy
 ---
