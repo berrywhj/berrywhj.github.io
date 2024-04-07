@@ -22,9 +22,9 @@ This returns the location of the gem-based theme files. For example, the Minima 
 
 Now your default.html file under the _layouts folder might look like this:
 
-![Defaul.html](/berrywhj.github.io/assets/img/defaul-html.png)
+![Defaul.html](/assets/img/defaul-html.png)
 
 
 Then your post pages should be able to render mathematical equations properly.
 
-![Mathematical Equations](/berrywhj.github.io/assets/img/mathematical-equations.png)
+![Mathematical Equations](/assets/img/mathematical-equations.png)
